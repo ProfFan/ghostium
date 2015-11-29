@@ -60,7 +60,7 @@
                 </a>
                 <p itemprop="description" class="post-author-bio">{{author.bio}}</p>
                 {{#if author.location}}
-                  <p class="post-author-location">{{author.location}}</p>
+                  <p class="post-author-location"><i class="fa fa-map-marker"></i>{{author.location}}</p>
                 {{/if}}
                 {{#if author.website}}
                   <p class="post-author-website">
@@ -91,6 +91,25 @@
   </div>
 </section>
 
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [
+                    ['$', '$'],
+                    ["\\(", "\\)"]
+                ],
+                displayMath: [
+                    ['$$', '$$'],
+                    ["\\[", "\\]"]
+                ],
+                processEscapes: true,
+                processEnvironments: true
+            },
+"HTML-CSS": { linebreaks: { automatic: true, width: "75% container" } }
+        });
+</script>
+
+<script src="https://cdn.amayume.net/mathjax/MathJax.js?config=TeX-AMS_HTML"></script>
 <script type="text/javascript">
   if(GHOSTIUM.haveDisqus) {
     {{#post}}
@@ -108,4 +127,5 @@
   } else {
     document.querySelector('.post-comments').remove();
   }
+  if(typeof MathJax != 'undefined') MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 </script>

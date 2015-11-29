@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Droid Serif";
+    font-style: normal;
+    font-weight: 400;
+    src: url(DroidSerif.eot);
+    src: local("Droid Serif"), local("DroidSerif"), url(DroidSerif.eot?#iefix) format("embedded-opentype"), url(DroidSerif.woff) format("woff"), url(DroidSerif.ttf) format("truetype")
+    }
+@font-face {
+    font-family: "Droid Serif";
+    font-style: normal;
+    font-weight: 700;
+    src: url(DroidSerif-Bold.eot);
+    src: local("Droid Serif Bold"), local("DroidSerif-Bold"), url(DroidSerif-Bold.eot?#iefix) format("embedded-opentype"), url(DroidSerif-Bold.woff) format("woff"), url(DroidSerif-Bold.ttf) format("truetype")
+    }
+@font-face {
+    font-family: "Droid Serif";
+    font-style: italic;
+    font-weight: 400;
+    src: url(DroidSerif-Italic.eot);
+    src: local("Droid Serif Italic"), local("DroidSerif-Italic"), url(DroidSerif-Italic.eot?#iefix) format("embedded-opentype"), url(DroidSerif-Italic.woff) format("woff"), url(DroidSerif-Italic.ttf) format("truetype")
+    }
